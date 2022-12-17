@@ -1,0 +1,53 @@
+---
+const {title} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
+		<title>{title}</title>
+
+		<style>
+			html,
+			body {
+				background-color: #C1E1C1;
+				font-family: "IBM Plex Mono", monospace, system-ui;
+				margin: 0;
+				padding: 2rem;
+                text-align: center;
+			}
+			#page {
+				font-family: "Anonymous Pro", monospace, system-ui;
+				color: #292626;
+				font-size: 6em;
+				text-align: center;
+			}
+            article {
+                margin: 0;
+				padding: 2rem;
+            }
+		</style>
+	</head>
+	<body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="../about">About</a>
+            <a href="../projects">Projects</a>
+            <a href="../blog">Blog</a>
+        </nav>
+		<main>
+			<div>
+				<h1 id="page">Leon Wang</h1>
+			</div>
+			<div>
+				<p>{title.toLowerCase()} page! in progress.</p>
+			</div>
+		</main>
+        <article>
+            <slot />
+        </article>
+	</body>
+</html>
