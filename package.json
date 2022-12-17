@@ -1,7 +1,9 @@
 {
-  "name": "@example/framework-svelte",
+  "name": "leon-wang-portfolio",
+  "author": "Leon Wang",
+  "email": "leonw2@illinois.edu",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
