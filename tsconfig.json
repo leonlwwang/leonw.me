@@ -1,3 +1,4 @@
 {
+  "exclude": ["./content/**/*", "./go.mod", "./go.sum"],
   "extends": "astro/tsconfigs/base"
 }
