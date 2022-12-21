@@ -13,12 +13,8 @@
 <div>
     <nav class="flex justify-between p-6 md:p-8">
         <a class="flex justify-start items-center text-center w-10 h-10" href="/">
-            {#await promise}
-                <p>loading...</p>
-            {:then url}
-                <img src={url} alt="">
-            {:catch error}
-                <p>{error}</p>
+            {#await promise then url}
+                <img src={url} alt="home">
             {/await}
         </a>
         <ul class="flex justify-end items-center space-x-12 mr-4">
