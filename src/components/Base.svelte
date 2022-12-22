@@ -10,6 +10,8 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
 		<title>{title}</title>
+		<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
 	</head>
 	<body class="bg-base">
 		<Header/>
