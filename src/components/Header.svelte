@@ -1,13 +1,6 @@
 <script>
-    import PocketBase from 'pocketbase';
-    const pb = new PocketBase('http://127.0.0.1:8090');
-
-    async function getImg() {
-        const record = await pb.collection('content').getOne('ael1ai2ju014k72');
-        const url = pb.getFileUrl(record, record.file);
-        return url;
-    }
-    let promise = getImg();
+    import { getFile } from './stores.ts';
+    let promise = getFile('ael1ai2ju014k72');
 </script>
 
 <div>
