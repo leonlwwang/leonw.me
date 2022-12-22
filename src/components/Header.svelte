@@ -1,14 +1,7 @@
-<script>
-    import { getFile } from './stores.ts';
-    let promise = getFile('ael1ai2ju014k72');
-</script>
-
 <div>
     <nav class="flex justify-between p-6 md:p-8">
         <a class="flex justify-start items-center text-center w-10 h-10" href="/">
-            {#await promise then url}
-                <img src={url} alt="home">
-            {/await}
+            <img src="http://127.0.0.1:8090/api/files/ud5g04me0pqfumi/ael1ai2ju014k72/home_SedA3EcajZ.svg" alt="home">
         </a>
         <ul class="flex justify-end items-center space-x-12 mr-4">
             <li>
