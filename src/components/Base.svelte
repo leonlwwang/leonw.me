@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
 	import Header from "./Header.svelte";
 	import Footer from "./Footer.svelte";
-    export let title;
+	import Bar from "./Bar.svelte";
+    export let title : string;
 </script>
 
 <html lang="en">
@@ -10,8 +11,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
 		<title>{title}</title>
-		<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+		<Bar/>
 	</head>
 	<body class="bg-base">
 		<Header/>
