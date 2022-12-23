@@ -4,7 +4,8 @@ import Base from "../components/Base.svelte";
 ---
 
 <script>
-	var newPage = (window.location.href === document.referrer);
+	import { newPage } from '../scripts/pagestate.js';
+	newPage.set((window.location.href != document.referrer));
 	console.log(newPage);
 </script>
 <Bar/>
