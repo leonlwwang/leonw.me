@@ -1,10 +1,3 @@
-<script>
-    import { onMount } from "svelte";
-    var url = "";
-    onMount(() => url = window.location.href);
-    console.log(url);
-</script>
-
 <div>
     <nav class="flex justify-between p-6 md:p-8">
         <a class="flex justify-start items-center text-center w-10 h-10" href="/">

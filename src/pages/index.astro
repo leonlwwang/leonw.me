@@ -1,7 +1,13 @@
 ---
+import Bar from "../components/Bar.svelte";
 import Base from "../components/Base.svelte";
 ---
 
+<script>
+	var newPage = (window.location.href === document.referrer);
+	console.log(newPage);
+</script>
+<Bar/>
 <Base title={"Home"}>
 	<div>
 		<h1 class="font-mono text-9xl text-right my-16 mr-14">Leon Wang</h1>
