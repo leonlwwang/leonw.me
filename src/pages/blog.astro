@@ -3,12 +3,7 @@ import Bar from "../components/Bar.svelte";
 import Base from "../components/Base.svelte";
 ---
 
-<script>
-	import { newPage } from '../scripts/pagestate.js';
-	newPage.set((window.location.href != document.referrer));
-	console.log(newPage);
-</script>
-<Bar/>
+<Bar client:only/>
 <Base title={"Blog"}>
     <div></div>
 </Base>

@@ -1,45 +1,56 @@
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-    <style>
-        .pace {
-        	-webkit-pointer-events: none;
-        	pointer-events: none;
-        
-        	-webkit-user-select: none;
-        	-moz-user-select: none;
-        	user-select: none;
-        
-        	position: fixed;
-        	top: 0;
-        	left: 0;
-        	width: 100%;
-        
-        	-webkit-transform: translate3d(0, -50px, 0);
-        	-ms-transform: translate3d(0, -50px, 0);
-        	transform: translate3d(0, -50px, 0);
-        
-        	-webkit-transition: transform .5s ease-out;
-        	-ms-transition: transform .5s ease-out;
-        	transition: transform .5s ease-out;
-        }
-        
-        .pace.pace-active {
-        	-webkit-transform: translate3d(0, 0, 0);
-        	-ms-transform: translate3d(0, 0, 0);
-        	transform: translate3d(0, 0, 0);
-        }
-        
-        .pace .pace-progress {
-        	display: block;
-        	position: fixed;
-        	z-index: 2000;
-        	top: 0;
-        	right: 100%;
-        	width: 100%;
-        	height: 7px;
-        	background: #292626;
-        
-        	pointer-events: none;
-        }
-    </style>
-</head>
+<script lang="ts">
+	import { onMount } from "svelte";
+	let newPage : boolean = null;
+	onMount(() => {
+		console.log((window.location.href != document.referrer));
+		newPage = (window.location.href != document.referrer);
+	});
+</script>
+
+{#if newPage}
+	<div>
+	    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+	    <style>
+	        .pace {
+	        	-webkit-pointer-events: none;
+	        	pointer-events: none;
+			
+	        	-webkit-user-select: none;
+	        	-moz-user-select: none;
+	        	user-select: none;
+			
+	        	position: fixed;
+	        	top: 0;
+	        	left: 0;
+	        	width: 100%;
+			
+	        	-webkit-transform: translate3d(0, -50px, 0);
+	        	-ms-transform: translate3d(0, -50px, 0);
+	        	transform: translate3d(0, -50px, 0);
+			
+	        	-webkit-transition: transform .5s ease-out;
+	        	-ms-transition: transform .5s ease-out;
+	        	transition: transform .5s ease-out;
+	        }
+		
+	        .pace.pace-active {
+	        	-webkit-transform: translate3d(0, 0, 0);
+	        	-ms-transform: translate3d(0, 0, 0);
+	        	transform: translate3d(0, 0, 0);
+	        }
+		
+	        .pace .pace-progress {
+	        	display: block;
+	        	position: fixed;
+	        	z-index: 2000;
+	        	top: 0;
+	        	right: 100%;
+	        	width: 100%;
+	        	height: 6px;
+	        	background: #292626;
+			
+	        	pointer-events: none;
+	        }
+	    </style>
+	</div>
+{/if}
