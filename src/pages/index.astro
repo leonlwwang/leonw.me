@@ -1,11 +1,9 @@
 ---
-import Bar from "../components/Bar.svelte";
-import Base from "../components/Base.svelte";
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Bar client:only/>
-<Base title={"Home"}>
+<Layout title="Home">
 	<div>
 		<h1 class="font-mono text-9xl text-right my-16 mr-14">Leon Wang</h1>
 	</div>
-</Base>
+</Layout>
