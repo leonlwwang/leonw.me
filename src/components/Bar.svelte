@@ -1,9 +1,3 @@
-<script lang="ts">
-    import { loading } from '../scripts/loading';
-</script>
-
-<div class="loading-bar" class:show={$loading}></div>
-
 <style>
     div {
       position: fixed;

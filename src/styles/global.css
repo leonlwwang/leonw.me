@@ -1,0 +1,36 @@
+html {
+    background-color: #eae7dc;
+    font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif, system-ui;
+    color: #ac3b61;
+}
+
+h1 {
+    font-family: 'Anonymous Pro', monospace, 'Courier New', Courier, system-ui;
+}
+
+.turbo-progress-bar {
+    visibility: hidden;
+    height: 5px;
+    transform: translateX(0px);
+    background-image: linear-gradient(to right, #eae7dc, #ac3b61, #eae7dc);
+    background-size: 200% 200%;
+    animation: gradient-move 1s infinite;
+}
+@keyframes gradient-move { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
+
+#name {
+    font-size: 8rem;
+    line-height: 1;
+    text-align: right;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 3.5rem;
+}
+
+.placeholder {
+    text-align: center;
+}
