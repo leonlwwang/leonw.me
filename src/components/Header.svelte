@@ -1,4 +1,4 @@
-<div>
+<header>
     <nav>
         <a href="/">
             <img src="http://127.0.0.1:8090/api/files/ud5g04me0pqfumi/ael1ai2ju014k72/home_SedA3EcajZ.svg" alt="home">
@@ -15,7 +15,7 @@
             </li>
         </ul>
     </nav>
-</div>
+</header>
 
 <style>
     nav {
