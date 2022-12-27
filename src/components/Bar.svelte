@@ -1,4 +1,14 @@
+<script lang="ts">
+    import { loading } from '../scripts/turbo';
+</script>
+
+<div class="loading-bar" class:show={$loading}></div>
+
 <style>
+    .show {
+      opacity: 1;
+      transform: translateX(0px);
+    }
     div {
       position: fixed;
       width: 100%;
@@ -11,12 +21,8 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 150ms;
     }
-    .show {
-      opacity: 1;
-      transform: translateX(0px);
-    }
     .loading-bar {
-      background-image: linear-gradient(to right, #f8f0e2, #362e2a, #f8f0e2);
+      background-image: linear-gradient(to right, #8BD3E6, #E6A595, #85A1F2);
       background-size: 200% 200%;
       animation: gradient-move 1s infinite;
     }

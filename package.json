@@ -16,6 +16,7 @@
     "@astrojs/svelte": "^1.0.2",
     "@hotwired/turbo": "^7.2.4",
     "astro": "^1.7.2",
+    "nanostores": "^0.7.1",
     "pocketbase": "^0.9.0",
     "svelte": "^3.48.0"
   }

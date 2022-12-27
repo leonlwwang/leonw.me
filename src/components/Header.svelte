@@ -37,13 +37,13 @@
         width: 2.5rem;
         height: 2.5rem;
     }
-    a:visited { color: #ac3b61; }
+    a:visited { color: inherit; }
     ul, li {
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-right: 1.5rem;
-        margin-left: 6rem;
+        margin-left: 4rem;
     }
 </style>
