@@ -9,13 +9,14 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/deno": "^3.0.0",
     "@astrojs/svelte": "^1.0.2",
     "@hotwired/turbo": "^7.2.4",
-    "astro": "^1.7.2",
+    "astro": "^1.8.0",
     "nanostores": "^0.7.1",
     "svelte": "^3.48.0"
   }
