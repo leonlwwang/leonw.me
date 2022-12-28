@@ -1,20 +1,37 @@
 ---
+import leonlogo from '../images/leonlogo.png';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-	<div>
+	<div id="flexbox">
+		<div id="child">
+			<img id="logo" src={leonlogo} alt="leon-logo"/>
+		</div>
 		<h1 id="name">Leon Wang</h1>
 	</div>
 </Layout>
 
 <style>
+	#flexbox {
+		justify-content: space-around;
+		padding: 2rem;
+		display: flex;
+		align-items: center;
+	}
 	#name {
+		flex: 1;
     	font-size: 8rem;
     	line-height: 1;
-    	text-align: right;
-    	margin-top: 4rem;
-    	margin-bottom: 4rem;
-    	margin-right: 3.5rem;
+		text-align: center;
+	}
+	#logo {
+		display: flex;
+		width: 400px;
+		height: auto;
+	}
+	#child {
+		margin-right: 6rem;
+		margin-left: 6rem;
 	}
 </style>
