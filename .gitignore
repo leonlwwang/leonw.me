@@ -21,4 +21,4 @@ pnpm-debug.log*
 .vscode/
 
 # PocketBase
-content/pb_data/
+# content/pb_data/
