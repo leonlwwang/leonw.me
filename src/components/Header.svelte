@@ -29,6 +29,7 @@
         margin-left: 2rem;
     }
     a {
+        color: inherit;
         text-decoration: none;
         display: flex;
         justify-content: center;
