@@ -134,5 +134,5 @@
         font-weight: 550;
     }
     #repo:visited { color: inherit; }
-    #repo:hover { color: #D2042D; }
+    #repo:hover { color: #f08d74; }
 </style>
