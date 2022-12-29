@@ -38,6 +38,7 @@
         width: 2.5rem;
         height: 2.5rem;
     }
+    a:hover { text-decoration: underline; }
     a:visited { color: inherit; }
     ul, li {
         list-style: none;
