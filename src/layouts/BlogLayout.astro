@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+import Bar from '../components/Bar.svelte';
+import Header from '../components/Header.svelte';
+import Footer from '../components/Footer.svelte';
+
+const { frontmatter } = Astro.props;
+
+function getDate(input : Date) : string {
+	const options : object = { year: 'numeric', month: 'long', day: 'numeric' };
+	return input.toLocaleDateString(undefined, options);
+}
+let date = getDate(new Date(frontmatter.pubDate));
+let update = getDate(new Date(frontmatter.lastUpdate));
+if (frontmatter.lastUpdate === null) { update = null; }
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href={Astro.url.origin + "/favicon.svg"} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title + " | Blog"}</title>
+		<script>
+			import '../scripts/turbo.ts';
+		</script>
+	</head>
+	<body>
+		<Bar client:only/>
+		<Header/>
+		<main>
+			<div id="content">
+				<div id="post">
+					<h1 id="blog-title">{frontmatter.title}</h1>
+					<p>{frontmatter.description}</p>
+					<p id="date">{"Published on " + date}</p>
+					{date != update && update != null && <p id="update">{"Last updated on " + update}</p>}
+					<slot />
+				</div>
+			</div>
+		</main>
+		<Footer/>
+	</body>
+</html>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-rendering: optimizeLegibility;
+	}
+	#content {
+		max-width: 768px;
+		width: 100%;
+	}
+	#post {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		text-align: left;
+	}
+	#blog-title {
+		font-size: 3rem;
+	}
+	#date, #update {
+		opacity: 0.7;
+		font-size: 0.75rem;
+	}
+</style>
