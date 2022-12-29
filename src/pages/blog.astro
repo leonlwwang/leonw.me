@@ -1,7 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const posts = (await Astro.glob("./blog/hello-world.md")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
 ---
 
 <Layout title="Blog">
-    <div></div>
+    <ul>
+        {
+          posts.map((post, index) => (
+              <li>
+                  <a href={post.url}>{post.frontmatter.title}</a>
+              </li>
+          ))
+        }
+    </ul>
 </Layout>
+
+<style>
+    ul {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    li {
+        display: grid;
+        box-sizing: border-box;
+        grid-template-columns: minmax(0, 1fr);
+        grid-column-end: span 4;
+    }
+    a {
+        text-align: center;
+    }
+</style>

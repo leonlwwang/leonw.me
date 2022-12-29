@@ -6,6 +6,7 @@ import Footer from '../components/Footer.svelte';
 
 const { frontmatter } = Astro.props;
 
+let tags : Array<string> = frontmatter.tags;
 function getDate(input : Date) : string {
 	const options : object = { year: 'numeric', month: 'long', day: 'numeric' };
 	return input.toLocaleDateString(undefined, options);
@@ -33,10 +34,15 @@ if (frontmatter.lastUpdate === null) { update = null; }
 		<main>
 			<div id="content">
 				<div id="post">
+					<a href="/blog" id="back">&#5130;&#5130; back</a>
 					<h1 id="blog-title">{frontmatter.title}</h1>
 					<p>{frontmatter.description}</p>
+					<nav id="tags">
+						{tags.map((tag) => <a class="tag">{tag}</a>)}
+					</nav>
 					<p id="date">{"Published on " + date}</p>
-					{date != update && update != null && <p id="update">{"Last updated on " + update}</p>}
+					{date != update && update != null && <p id="update" style="margin-block-start: 0.2em;">{"Last updated on " + update}</p>}
+					<div style="margin-block: 2.5em;"></div>
 					<slot />
 				</div>
 			</div>
@@ -52,6 +58,16 @@ if (frontmatter.lastUpdate === null) { update = null; }
 		align-items: center;
 		text-rendering: optimizeLegibility;
 	}
+	.tag {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		line-height: 1;
+		padding: 0.2em 0.5em;
+		margin-right: 0.8em;
+		background-color: #E6A595;
+		text-decoration: none;
+	}
 	#content {
 		max-width: 768px;
 		width: 100%;
@@ -63,9 +79,25 @@ if (frontmatter.lastUpdate === null) { update = null; }
 	}
 	#blog-title {
 		font-size: 3rem;
+		margin-block-start: 0.5em;
+		margin-block-end: 0.2em;
 	}
 	#date, #update {
+		margin-block-end: 0.2em;
 		opacity: 0.7;
 		font-size: 0.75rem;
+	}
+	#tags {
+		display: inline;
+		line-height: 1.5;
+	}
+	#back, #back:visited {
+		color: inherit;
+		text-decoration: none;
+		opacity: 0.7;
+		font-size: 0.8rem;
+	}
+	#back:hover {
+		opacity: 1;
 	}
 </style>
