@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getDate } from '../scripts/date';
 import Bar from '../components/Bar.svelte';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.svelte';
@@ -7,10 +8,6 @@ import Footer from '../components/Footer.svelte';
 const { frontmatter } = Astro.props;
 
 let tags : Array<string> = frontmatter.tags;
-function getDate(input : Date) : string {
-	const options : object = { year: 'numeric', month: 'long', day: 'numeric' };
-	return input.toLocaleDateString(undefined, options);
-}
 let date = getDate(new Date(frontmatter.pubDate));
 let update = getDate(new Date(frontmatter.lastUpdate));
 if (frontmatter.lastUpdate === null) { update = null; }
@@ -52,12 +49,6 @@ if (frontmatter.lastUpdate === null) { update = null; }
 </html>
 
 <style>
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-rendering: optimizeLegibility;
-	}
 	.tag {
 		display: inline-block;
 		text-transform: uppercase;
