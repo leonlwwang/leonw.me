@@ -1,5 +1,6 @@
 ---
 import { getDate } from '../scripts/date';
+import Tag from '../components/Tag.svelte';
 import Layout from '../layouts/Layout.astro';
 
 const posts = (await Astro.glob("./blog/*.md")).sort(
@@ -23,6 +24,9 @@ const posts = (await Astro.glob("./blog/*.md")).sort(
                             <div style="display: flex; justify-content: space-between;">
                                 <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.pubDate))}</p>
                             </div>
+                            <nav style="display: flex; line-height: 1.5;">
+                                {post.frontmatter.tags.map((tag) => <Tag tagName={tag}/>)}
+                            </nav>
                         </div>
                     </div>
                   </a>
@@ -62,7 +66,7 @@ const posts = (await Astro.glob("./blog/*.md")).sort(
         transform: translateY(-10px);
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 0.4s;
+        transition-duration: 0.5s;
     }
     #card:hover {
         box-shadow: -10px -10px 0px #2B2222;
