@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: 'First Post'
+title: 'Hello World'
 pubDate: 2022-12-30
 lastUpdate: null
-description: 'This is the first post of my blog!'
+description: 'This is my first blog post!'
 author: 'Leon Wang'
 tags: ["first post", "rambling"]
 ---
