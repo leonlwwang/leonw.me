@@ -1,4 +1,4 @@
-ul {
+#cards {
     display: grid;
     max-width: 1024px;
     width: 100%;
@@ -7,7 +7,7 @@ ul {
     grid-row-gap: 2rem;
     padding-inline-start: 0px;
 }
-li {
+#card-box {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: minmax(0, 1fr);
@@ -37,11 +37,11 @@ li {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 0.5s;
 }
-a {
+#url {
     color: #2B2222;
     text-decoration: none;
 }
-span {
+#card-title {
     opacity: 0.9;
     font-size: 2rem;
     font-family: "IBM Plex Mono" !important;

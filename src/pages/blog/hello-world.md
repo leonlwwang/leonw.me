@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/PostLayout.astro
 title: 'Hello World'
 pubDate: 2022-12-30
 lastUpdate: null
