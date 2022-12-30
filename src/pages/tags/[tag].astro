@@ -1,0 +1,92 @@
+---
+import { getDate } from '../../scripts/date';
+import Tag from '../../components/Tag.svelte';
+import Layout from '../../layouts/Layout.astro';
+
+const { tag } = Astro.params;
+const posts = (await Astro.glob("../blog/*.md")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
+const filteredPosts = posts.filter((post) => post.frontmatter.tags.includes(tag));
+---
+
+<Layout title={tag}>
+    <div style="padding-block-end: 2rem;"></div>
+    <p>Posts tagged with <span style="font-size: 1rem; font-weight: 600;">{tag.toUpperCase()}</span></p>
+    <ul>
+        {
+          filteredPosts.map((post, index) => (
+              <li>
+                  <a href={post.url}>
+                    <div id="card">
+                        <div style="padding: 2.5rem;">
+                            <span>{post.frontmatter.title}</span>
+                            <p>{post.frontmatter.description}</p>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.pubDate))}</p>
+                            </div>
+                            <nav style="display: flex; line-height: 1.5;">
+                                {post.frontmatter.tags.map((t) => <Tag tagName={t}/>)}
+                            </nav>
+                        </div>
+                    </div>
+                  </a>
+              </li>
+          ))
+        }
+    </ul>
+</Layout>
+
+<style>
+    ul {
+        display: grid;
+        max-width: 1024px;
+        width: 100%;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        padding-inline-start: 0px;
+    }
+    li {
+        display: grid;
+        box-sizing: border-box;
+        grid-template-columns: minmax(0, 1fr);
+        grid-column-end: span 7;
+    }
+    #card {
+        box-shadow: 0px 0px 0px #2B2222;
+        border: 1px;
+        border-style: solid;
+        border-color: #2B2222;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        height: 14rem;
+        justify-content: space-between;
+        position: relative;
+        transform: translateY(-10px);
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.5s;
+    }
+    #card:hover {
+        box-shadow: -10px -10px 0px #2B2222;
+        transform: translateX(10px);
+        background-color: #FFEEDF;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.5s;
+    }
+    a {
+        color: #2B2222;
+        text-decoration: none;
+    }
+    span {
+        opacity: 0.9;
+        font-size: 2rem;
+        font-family: "IBM Plex Mono" !important;
+        font-weight: 750;
+    }
+</style>
