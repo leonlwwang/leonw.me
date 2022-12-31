@@ -9,20 +9,22 @@ const { posts } = Astro.props;
     {
       posts.map((post, index) => (
           <li id="card-box">
-              <a id="url" href={post.url}>
                 <div id="card">
-                    <div style="padding: 2.5rem;">
-                        <span id="card-title">{post.frontmatter.title}</span>
-                        <p>{post.frontmatter.description}</p>
-                        <div style="display: flex; justify-content: space-between;">
-                            <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.pubDate))}</p>
+                    <a id="url" href={post.url}>
+                      <div style="height: 14rem;">
+                        <div style="padding: 2.5rem;">
+                          <span id="card-title">{post.frontmatter.title}</span>
+                          <p>{post.frontmatter.description}</p>
+                          <div style="display: flex; justify-content: space-between;">
+                              <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.pubDate))}</p>
+                          </div>
                         </div>
-                        <nav style="display: flex; line-height: 1.5;">
-                            {post.frontmatter.tags.map((tag) => <Tag tagName={tag}/>)}
-                        </nav>
+                      </div>
+                    </a>
+                    <div id="tag-box">
+                        {post.frontmatter.tags.map((tag) => <Tag tagName={tag}/>)}
                     </div>
                 </div>
-              </a>
           </li>
       ))
     }
