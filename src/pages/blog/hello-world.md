@@ -5,7 +5,7 @@ pubDate: 2022-12-30
 lastUpdate: 2022-12-30
 description: 'This is my first blog post!'
 author: 'Leon Wang'
-tags: ["first post", "rambling"]
+tags: ["first post"]
 ---
 
 # Insert Subtitle Text Here
