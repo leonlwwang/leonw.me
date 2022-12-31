@@ -6,7 +6,7 @@
 	<a class="tag" class:tag1={true} href={"/tags/" + tagName}>{tagName}</a>
 {:else if tagName == "rambling"}
 	<a class="tag" class:tag2={true} href={"/tags/" + tagName}>{tagName}</a>
-{:else if tagName == "music production"}
+{:else if tagName == "music"}
 	<a class="tag" class:tag3={true} href={"/tags/" + tagName}>{tagName}</a>
 {:else if tagName == "game development"}
 	<a class="tag" class:tag4={true} href={"/tags/" + tagName}>{tagName}</a>
@@ -55,7 +55,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 0.5s;
 	}
-	/* MUSIC PROD. tag */
+	/* MUSIC tag */
 	.tag3 {
 		border: 1px;
 		border-style: solid;
