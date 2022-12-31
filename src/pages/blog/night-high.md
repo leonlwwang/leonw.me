@@ -5,7 +5,7 @@ pubDate: 2023-01-01
 lastUpdate: 2023-01-01
 description: 'Birthday post: My nine-year journey of exploring music production and songwriting.'
 author: 'Leon Wang'
-tags: ["music production", "rambling"]
+tags: ["music", "rambling"]
 ---
 
 ### Today is officially my birthday! 🥳🎉

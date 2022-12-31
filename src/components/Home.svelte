@@ -1,0 +1,21 @@
+<script lang="ts">
+
+</script>
+
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path style="fill:#2B2222" d="M 7.48 8.126 L 7.281 25.375 L 7.205 40.909 
+                                    L 12.844 40.906 L 37.156 40.906 L 42.653 40.88 
+                                    L 42.719 8.219 L 7.48 8.126 Z"/>
+    </g>
+</svg>
+
+<style>
+    svg {
+        justify-self: center;
+        position: relative;
+        left: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+</style>
