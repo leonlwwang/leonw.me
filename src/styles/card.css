@@ -4,7 +4,7 @@
     width: 100%;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 4rem;
     padding-inline-start: 0px;
 }
 #card-box {
@@ -31,10 +31,17 @@
 }
 #card:hover {
     box-shadow: -10px -10px 0px #2B2222;
+    border-color: #FFEEDF;
     transform: translateX(10px);
     background-color: #FFEEDF;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.5s;
+}
+#card:hover > #tag-box {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
     transition-duration: 0.5s;
 }
 #url {
@@ -46,4 +53,13 @@
     font-size: 2rem;
     font-family: "IBM Plex Mono" !important;
     font-weight: 750;
+}
+#tag-box {
+    position: relative;
+    right: 1px;
+    display: flex;
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+    transition-duration: 0.5s;
 }
