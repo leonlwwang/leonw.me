@@ -35,9 +35,9 @@ if (frontmatter.lastUpdate === null) { update = null; }
 					<a href="/blog" id="back">&#5130;&#5130; back</a>
 					<h1 id="blog-title">{frontmatter.title}</h1>
 					<p>{frontmatter.description}</p>
-					<nav id="tags" style="display: inline; line-height: 1.5;">
-						{tags.map((tag) => <Tag tagName={tag}/>)}
-					</nav>
+					<div id="tags" style="display: inline; line-height: 1.5;">
+						{tags.map((tag) => <div><Tag tagName={tag}/></div>)}
+					</div>
 					<p id="date">{"Published on " + date}</p>
 					{date != update && update != null && <p id="update" style="margin-block-start: 0.2em;">{"Last updated on " + update}</p>}
 					<div style="margin-block: 2.5em;"></div>
@@ -79,5 +79,9 @@ if (frontmatter.lastUpdate === null) { update = null; }
 		transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 0.33s;
+	}
+	#tags > * {
+		all: inherit;
+		margin-right: 0.8rem;
 	}
 </style>
