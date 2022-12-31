@@ -16,7 +16,11 @@ const { posts } = Astro.props;
                           <span id="card-title">{post.frontmatter.title}</span>
                           <p>{post.frontmatter.description}</p>
                           <div style="display: flex; justify-content: space-between;">
-                              <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.pubDate))}</p>
+                              { 
+                                (post.frontmatter.lastUpdate === post.frontmatter.pubDate) ?
+                                <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.pubDate))}</p> :
+                                <p style="opacity: 0.6; font-size: 0.8rem;">{getDate(new Date(post.frontmatter.lastUpdate))}</p>
+                              }
                           </div>
                         </div>
                       </div>

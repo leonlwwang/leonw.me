@@ -39,7 +39,7 @@ if (frontmatter.lastUpdate === null) { update = null; }
 						{tags.map((tag) => <div><Tag tagName={tag}/></div>)}
 					</div>
 					<p id="date">{"Published on " + date}</p>
-					{date != update && update != null && <p id="update" style="margin-block-start: 0.2em;">{"Last updated on " + update}</p>}
+					{date != update && <p id="update" style="margin-block-start: 0.2em;">{"Last updated on " + update}</p>}
 					<div style="margin-block: 2.5em;"></div>
 					<slot />
 				</div>
