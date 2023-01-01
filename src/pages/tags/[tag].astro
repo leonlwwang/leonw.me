@@ -9,9 +9,10 @@ const posts = (await Astro.glob("../blog/*.md")).sort(
     new Date(a.frontmatter.pubDate).valueOf()
 );
 const filteredPosts = posts.filter((post) => post.frontmatter.tags.includes(tag));
+const tagTitle : string = tag.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 ---
 
-<Layout title={tag}>
+<Layout title={"Leon Wang | Tag: '" + tagTitle + "'"}>
     <div style="padding-block-end: 2rem;"></div>
     <p>Posts tagged with <span style="font-size: 1rem; font-weight: 600;">{tag.toUpperCase()}</span></p>
     <BlogLayout posts={filteredPosts} />
