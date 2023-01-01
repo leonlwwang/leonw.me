@@ -17,7 +17,9 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://leonw.me',
-  integrations: [svelte(), prefetch(), critters(), sitemap()],
+  integrations: [svelte(), prefetch(), critters(), sitemap({
+    customPages: ['https://leonw.me/about', 'https://leonw.me/blog', 'https://leonw.me/projects']
+  })],
   output: 'server',
   adapter: deno(),
   markdown: {
@@ -25,5 +27,5 @@ export default defineConfig({
       theme: customTheme,
       wrap: true
     }
-  }
+  },
 });
