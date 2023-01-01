@@ -3,13 +3,13 @@
 </script>
 
 {#if tagName == "first post"}
-	<a class="tag" class:tag1={true} href={"/tags/" + tagName}>{tagName}</a>
+	<a rel="prefetch" class="tag" class:tag1={true} href={"/tags/" + tagName}>{tagName}</a>
 {:else if tagName == "rambling"}
-	<a class="tag" class:tag2={true} href={"/tags/" + tagName}>{tagName}</a>
+	<a rel="prefetch" class="tag" class:tag2={true} href={"/tags/" + tagName}>{tagName}</a>
 {:else if tagName == "music"}
-	<a class="tag" class:tag3={true} href={"/tags/" + tagName}>{tagName}</a>
+	<a rel="prefetch" class="tag" class:tag3={true} href={"/tags/" + tagName}>{tagName}</a>
 {:else if tagName == "game development"}
-	<a class="tag" class:tag4={true} href={"/tags/" + tagName}>{tagName}</a>
+	<a rel="prefetch" class="tag" class:tag4={true} href={"/tags/" + tagName}>{tagName}</a>
 {/if}
 
 <style>

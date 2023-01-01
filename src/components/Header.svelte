@@ -1,17 +1,17 @@
 <header>
     <nav>
-        <a id="home" href="/">
+        <a rel="prefetch" id="home" href="/">
             <slot/>
         </a>
         <ul>
             <li>
-                <a href="../about">About</a>
+                <a rel="prefetch" href="../about">About</a>
             </li>
             <li>
-                <a href="../projects">Projects</a>
+                <a rel="prefetch" href="../projects">Projects</a>
             </li>
             <li>
-                <a href="../blog">Blog</a>
+                <a rel="prefetch" href="../blog">Blog</a>
             </li>
         </ul>
     </nav>

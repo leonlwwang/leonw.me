@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@astrojs/deno": "^3.0.0",
+    "@astrojs/prefetch": "^0.1.1",
     "@astrojs/svelte": "^1.0.2",
     "@hotwired/turbo": "^7.2.4",
     "astro": "^1.8.0",
