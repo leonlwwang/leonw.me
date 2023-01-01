@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 'Who is Night High?'
-pubDate: 2023-01-01
-lastUpdate: 2023-01-01
+pubDate: 2022-12-31
+lastUpdate: 2022-12-31
 description: 'Birthday post: My decade-long journey of exploring music production and songwriting.'
 author: 'Leon Wang'
 tags: ["music", "rambling"]
