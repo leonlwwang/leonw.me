@@ -60,13 +60,6 @@ To this day I don't know what happened to my laptop, but let's just say that pir
 Needless to say, it was hard for me to produce afterwards, and as college was right on the horizon, I
 gradually stopped working on projects and Overdrive started to fade away.
 
-And in 2019, my childhood friend and mentor Albert, who was now known as
-[Folded Dragons](https://open.spotify.com/artist/58OT6Rhdj8R1bIkeXPlLdP) and making a name
-in the industry for himself, tragically passed away.
-
-To say that I was devastated would be an incredible understatement. I felt like I had left him with a
-dwindling interest in our passion.
-
 # 2021: Enter Night High&#33;
 
 After a lot of self-reflection and making it to college, I felt ready to tackle music production once again.
