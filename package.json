@@ -15,9 +15,11 @@
   "dependencies": {
     "@astrojs/deno": "^3.0.0",
     "@astrojs/prefetch": "^0.1.1",
+    "@astrojs/sitemap": "^1.0.0",
     "@astrojs/svelte": "^1.0.2",
     "@hotwired/turbo": "^7.2.4",
     "astro": "^1.8.0",
+    "astro-critters": "^1.1.24",
     "nanostores": "^0.7.1",
     "svelte": "^3.48.0"
   }

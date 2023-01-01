@@ -9,9 +9,15 @@ import deno from "@astrojs/deno";
 import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import critters from "astro-critters";
+
+// https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
-  // Enable Svelte to support Svelte components.
-  integrations: [svelte(), prefetch()],
+  site: 'https://leonw.me',
+  integrations: [svelte(), prefetch(), critters(), sitemap()],
   output: 'server',
   adapter: deno(),
   markdown: {
