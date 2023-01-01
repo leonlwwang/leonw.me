@@ -1,11 +1,7 @@
-<script lang="ts">
-    import Home from "./Home.svelte";
-</script>
-
 <header>
     <nav>
-        <a href="/">
-            <Home/>
+        <a id="home" href="/">
+            <slot/>
         </a>
         <ul>
             <li>
@@ -22,6 +18,10 @@
 </header>
 
 <style>
+    #home {
+        position: relative;
+        left: 1rem;
+    }
     nav {
         display: flex;
         justify-content: space-between;
@@ -35,8 +35,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
     }
     a:hover { text-decoration: underline; }
     a:visited { color: inherit; }

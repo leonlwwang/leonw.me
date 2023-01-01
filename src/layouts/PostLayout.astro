@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { getDate } from '../scripts/date';
 import Tag from '../components/Tag.svelte';
 import Bar from '../components/Bar.svelte';
+import Home from '../components/Home.svelte';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.svelte';
 
@@ -27,8 +28,14 @@ if (frontmatter.lastUpdate === null) { update = null; }
 		</script>
 	</head>
 	<body>
-		<Bar client:only/>
-		<Header/>
+		<div data-turbo-permanent id="loading-bar">
+			<Bar client:only="svelte"/>
+		</div>
+		<Header>
+			<div data-turbo-permanent id="home-icon">
+				<Home client:only="svelte"/>
+			</div>
+		</Header>
 		<main>
 			<div id="content" style="max-width: 768px; width: 100%;">
 				<div id="post">
