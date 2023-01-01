@@ -76,13 +76,13 @@ to spend the entire summer recording an entire album. I had recently bought an a
 record instruments and vocals. That resulted in Campfire, a fun ten-track album where I explored making
 indie rock and hip-hop music.
 
-[Campfire](https://open.spotify.com/album/5ZDQcJLSTvNiaNT47m7Yis?si=RWiae2YTRqmfbQ6dCmrpzg) was definitely crude, and my lyrics and voice still make me grimace, but it was a really great
-way of rekindling (pun not intended) my passion and pivoting into new genres of music. Thus, I rebranded
+[Campfire](https://open.spotify.com/album/5ZDQcJLSTvNiaNT47m7Yis?si=RWiae2YTRqmfbQ6dCmrpzg) was definitely crude, and my lyrics and voice still make me cringe, but it was a really great
+way of rekindling my passion and pivoting into new genres of music. Thus, I rebranded
 to **Night High**, a whole new era in my artistry.
 
 <figure>
 <img src="/assets/campfire.png" alt="Campfire" style="width:100%">
-<figcaption align = "center">Steve and I being weird for our album cover.</figcaption>
+<figcaption align = "center">Me and Steve being weird for our album cover.</figcaption>
 </figure>
 
 In college, I met some super cool and incredibly talented folks at the **UIUC Hip-Hop Collective** (now called
@@ -98,13 +98,19 @@ which was an amazing experience!
 It was awesome to hear all of the positive feedback from our listeners. Sure,
 we might not be topping any charts (...yet 😎), but the community here on campus loves everyone's work and it's truly inspiring.
 
+Finally, this year, I've also released a [few of my own solo tracks](https://open.spotify.com/artist/4GV1B1I84BRLjPMU6DZLut). I can already hear the improvement from
+when I first started the artist project! Also really glad I finally bought autotune instead of pitch adjusting
+individual, sliced clips of my voice. 😂
+
 # And so forth&period;&period;&period;
 
-I'm truly blessed to have made it all the way here with music. As I look back on this decade of ups and downs, I really am proud
-of myself for pulling through this far.
+I'm blessed to have made it all the way here with music. As I look back on this decade of ups and downs, I really am proud
+of myself for pulling through this far. I can't wait to hear my new sound in 2023!
 
 As my life goes on, there's certainly no guarantee that I'll become a rockstar musician, but wherever things take me, I know that
-I will always cherish the gift of creating musical expression, with or without any audience, and it will always be a part of my
-life.
+I will always cherish the gift of musical expression, with or without any audience.
 
-**Cheers to the future and Happy New Year to all!** 🥂
+Thank you to everyone who has
+supported be through thick and thin, whether you know me as Skull, Overdrive, Night High, or just Leon.
+
+### **Cheers to the future and Happy New Year to all!** 🥂
