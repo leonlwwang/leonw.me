@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 'Who is Night High?'
 pubDate: 2022-12-31
-lastUpdate: 2022-12-31
+lastUpdate: 2022-01-02
 description: 'Birthday post: My decade-long journey of exploring music production and songwriting.'
 author: 'Leon Wang'
 tags: ["music", "rambling"]
@@ -17,8 +17,7 @@ and songwriting.
 
 # 2012-2015: Skull Music
 
-It all begins ten years ago with a pirated copy of **FL Studio 10**. I intently watch my friend, Albert,
-teach himself to produce techno music with YouTube tutorials. I'm fascinated as I see virtual boxes with
+It all begins ten years ago with a music production software called **Fruity Loops (FL) Studio 10**. I intently watch my friend, Albert, teach himself to produce techno music with YouTube tutorials. I'm fascinated as I see virtual boxes with
 random knobs, graphs, and buttons form a bumping techno beat from scratch.
 
 <figure>
@@ -55,17 +54,17 @@ Unfortunately, as high school continued, good things came to an end.
 
 If you are a music producer, I cannot stress this enough: *BACK UP YOUR SAMPLE/PRESET LIBRARY*. Don't
 be like me and have a fried up hard drive with six years of your blood, sweat, and tears down the drain.
-To this day I don't know what happened to my laptop, but let's just say that pirated software: **bad**.
+To this day I don't exactly know what happened to my laptop, but let's just say that computer viruses: **bad**.
 
 Needless to say, it was hard for me to produce afterwards, and as college was right on the horizon, I
 gradually stopped working on projects and Overdrive started to fade away.
 
 # 2021: Enter Night High&#33;
 
-After a lot of self-reflection and making it to college, I felt ready to tackle music production once again.
+After a difficult couple of years, I finally made it to college. I felt ready to tackle music production once again.
 
 The summer before college began (and the start of COVID 😷), my childhood friend Steve and I decided
-to spend the entire summer recording an entire album. I had recently bought an audio interface and wanted to
+to spend the whole summer recording an entire album. I had recently bought an audio interface and wanted to
 record instruments and vocals. That resulted in Campfire, a fun ten-track album where I explored making
 indie rock and hip-hop music.
 
@@ -92,7 +91,7 @@ It was awesome to hear all of the positive feedback from our listeners. Sure,
 we might not be topping any charts (...yet 😎), but the community here on campus loves everyone's work and it's truly inspiring.
 
 Finally, this year, I've also released a [few of my own solo tracks](https://open.spotify.com/artist/4GV1B1I84BRLjPMU6DZLut). I can already hear the improvement from
-when I first started the artist project! Also really glad I finally bought autotune instead of pitch adjusting
+when I first started the artist project! Also really glad I finally bought AutoTune instead of pitch adjusting
 individual, sliced clips of my voice. 😂
 
 # And so forth&period;&period;&period;
