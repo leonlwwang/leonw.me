@@ -81,9 +81,8 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         margin-bottom: 1.5rem;
-        max-width: 1536px;
         padding-left: 0.75rem;
         padding-right: 0.75rem;
         padding: 2rem;
@@ -135,4 +134,9 @@
     }
     #repo:visited { color: inherit; }
     #repo:hover { color: #D2042D; }
+    @media screen and (max-width: 768px) {
+		footer {
+            margin-top: auto !important;
+        }
+    }
 </style>

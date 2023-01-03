@@ -14,24 +14,32 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	#flexbox {
-		justify-content: space-around;
 		padding: 2rem;
-		display: flex;
-		align-items: center;
+		display: block;
 	}
 	#name {
-		flex: 1;
     	font-size: 8rem;
     	line-height: 1;
 		text-align: center;
 	}
 	#logo {
-		display: flex;
+		display: block;
 		width: 400px;
 		height: auto;
 	}
 	#child {
-		margin-right: 6rem;
-		margin-left: 6rem;
+		display: flex;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
 	}
+    @media screen and (max-width: 768px) {
+		#logo {
+			margin-top: 4rem;
+			width: 70% !important;
+		}
+		#name {
+			font-size: 4rem !important;
+		}
+    }
 </style>

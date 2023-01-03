@@ -10,6 +10,7 @@
       transform: translateX(0px);
     }
     div {
+      z-index: 9999;
       position: fixed;
       width: 100%;
       top: 0px;
@@ -30,5 +31,10 @@
       0%{background-position:left}
       50%{background-position:right}
       100%{background-position:left}
+    }
+    @media screen and (max-width: 768px) {
+      div {
+        height: 0.225rem !important;
+      }
     }
 </style>

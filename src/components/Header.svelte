@@ -3,14 +3,14 @@
         <a rel="prefetch" id="home" href="/">
             <slot/>
         </a>
-        <ul>
-            <li>
+        <ul id="navbar">
+            <li class="page">
                 <a rel="prefetch" href="../about">About</a>
             </li>
-            <li>
+            <li class="page">
                 <a rel="prefetch" href="../projects">Projects</a>
             </li>
-            <li>
+            <li class="page">
                 <a rel="prefetch" href="../blog">Blog</a>
             </li>
         </ul>
@@ -40,12 +40,17 @@
     }
     a:hover { text-decoration: underline; }
     a:visited { color: inherit; }
-    ul, li {
+    #navbar, .page {
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-right: 1.5rem;
         margin-left: 4rem;
+    }
+    @media screen and (max-width: 768px) {
+        header {
+            display: none;
+        }
     }
 </style>
