@@ -4,6 +4,7 @@ import Bar from '../components/Bar.svelte';
 import Home from '../components/Home.svelte';
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.svelte';
+import MobileHeader from '../components/MobileHeader.svelte';
 
 const { title } = Astro.props;
 ---
@@ -12,7 +13,7 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href={Astro.url.origin + "/favicon.svg"} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -29,9 +30,23 @@ const { title } = Astro.props;
 				<Home client:only="svelte"/>
 			</div>
 		</Header>
+		<div id="navbar-mobile">
+			<MobileHeader client:only="svelte"/>
+		</div>
 		<main>
 			<slot />
 		</main>
 		<Footer/>
 	</body>
 </html>
+
+<style>
+	#navbar-mobile {
+		display: none;
+	}
+    @media screen and (max-width: 768px) {
+		#navbar-mobile {
+			display: flex;
+		}
+	}
+</style>
