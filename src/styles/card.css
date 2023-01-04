@@ -1,7 +1,7 @@
 #cards {
     display: grid;
     max-width: 1024px;
-    width: 100%;
+    width: 90%;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-column-gap: 2rem;
     grid-row-gap: 4rem;
@@ -21,7 +21,7 @@
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    height: 14rem;
+    height: auto;
     justify-content: space-between;
     position: relative;
     transform: translateY(-10px);
