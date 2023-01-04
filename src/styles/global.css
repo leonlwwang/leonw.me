@@ -1,6 +1,6 @@
 html {
     background-color: #FFEEDF;
-    font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif, system-ui;
+    font-family: 'IBM Plex Mono', monospace, 'Courier New', Courier, system-ui;
     color: #2B2222;
 }
 
@@ -12,7 +12,7 @@ main {
 }
 
 h1 {
-    font-family: 'Anonymous Pro', monospace, 'Courier New', Courier, system-ui;
+    font-family: 'IBM Plex Mono', monospace, 'Courier New', Courier, system-ui;
 }
 
 .turbo-progress-bar {
