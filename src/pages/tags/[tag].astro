@@ -13,7 +13,7 @@ const tagTitle : string = tag.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.t
 ---
 
 <Layout title={"Leon Wang | Tag: '" + tagTitle + "'"}>
-    <div style="padding-block-end: 2rem;"></div>
+    <div style="padding-block-end: 4rem;"></div>
     <p>Posts tagged with <span style="font-size: 1rem; font-weight: 600;">{tag.toUpperCase()}</span></p>
     <BlogLayout posts={filteredPosts} />
 </Layout>
