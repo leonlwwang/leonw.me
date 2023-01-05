@@ -19,18 +19,19 @@
     </div>
     <div id="about-text" style="width: 50%;">
         <div id="pad" style="padding: 5rem;">
-            <h3> I'm a third-year student studying Statistics & Computer Science at the University of Illinois at Urbana-Champaign. </h3>
+            <h2> I'm a junior studying Statistics & Computer Science at UIUC. </h2>
             <h4> 
                 I currently work as a web developer intern at the Daily Illini.
-                This summer, I'm interning at United Airlines as a Digital Technology intern!
+                This summer, I'll be working at United Airlines as a Digital Technology intern!
             </h4>
             <p>
-                I like combining creativity, art, and programming, designing elegant software solutions, and open-source projects.
+                I like combining creativity with programming, designing elegant software solutions, and contributing to open-source projects.
             </p>
             <p>
                 I also produce and songwrite under Night High, my independent artist project. My favorite DAW is Ableton Live!
             </p>
-            <p><b>Interested in more?</b>
+            <p>
+                <span>Interested in more?</span>
                 Check out my links below! 	
                 &#9759;
             </p>
@@ -68,12 +69,17 @@
         text-align: left;
     }
     #about-text {
+        font-family: 'SF-Pro';
         display: flex;
         align-content: center;
     }
     @media screen and (max-width: 768px) {
+        #portrait {
+            border-left: 1px dotted !important; 
+            border-bottom: 1px dotted !important; 
+        }
         #about-text {
-            width: 90% !important;
+            width: 85% !important;
             padding: 1.5rem;
         }
         #main-box {
@@ -87,7 +93,7 @@
             text-decoration: none;
         }
         #caption {
-            font-size: 0.4rem !important;
+            font-size: 0.35rem !important;
         }
         #pad {
             padding: 0rem !important;

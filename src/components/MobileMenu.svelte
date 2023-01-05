@@ -72,6 +72,7 @@
         flex-direction: column;
     }
     a, a:visited {
+        font-family: 'SF-Pro';
         margin-top: 2rem;
         margin-bottom: 2rem;
         text-decoration: none;

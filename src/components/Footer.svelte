@@ -138,5 +138,20 @@
 		footer {
             margin-top: auto !important;
         }
+        #repo:hover {
+            color: inherit;
+        }
+        svg:hover {
+            opacity: 0.88;
+            width: 1.5rem;
+            height: auto;
+            display: inline-block;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            transform: none !important;
+            transition-property: none !important;
+            transition-timing-function: none !important;
+            transition-duration: none !important;
+        }
     }
 </style>

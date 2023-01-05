@@ -14,7 +14,7 @@ const { posts } = Astro.props;
                       <div style="height: auto;">
                         <div style="padding: 2.5rem;">
                           <span id="card-title">{post.frontmatter.title}</span>
-                          <p>{post.frontmatter.description}</p>
+                          <p style="font-size: 16px;">{post.frontmatter.description}</p>
                           <div style="display: flex; justify-content: space-between;">
                               { 
                                 (post.frontmatter.lastUpdate === post.frontmatter.pubDate) ?

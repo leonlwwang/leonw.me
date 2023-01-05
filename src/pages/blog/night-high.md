@@ -8,7 +8,7 @@ author: 'Leon Wang'
 tags: ["music", "rambling"]
 ---
 
-### Today is officially my birthday 🥳
+## Today is officially my birthday 🥳
 
 I still can't believe I've turned 21 already. Time really flies as you get older.
 And because my birthday just happens to fall under the final day of the year,
