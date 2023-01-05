@@ -25,10 +25,10 @@
                 This summer, I'll be working at United Airlines as a Digital Technology intern!
             </h4>
             <p>
-                I like combining creativity with programming, designing elegant software solutions, and contributing to open-source projects.
+                I enjoy combining creativity with programming and designing elegant software solutions.
             </p>
             <p>
-                I also produce and songwrite under Night High, my independent artist project. My favorite DAW is Ableton Live!
+                I also produce and songwrite under Night High, my independent artist project.
             </p>
             <p>
                 <span>Interested in more?</span>
